@@ -26,3 +26,7 @@ Thumbs.db
 # Build
 dist/
 build/
+
+# Presentation source files (reference materials)
+*.pptx
+*.pdf

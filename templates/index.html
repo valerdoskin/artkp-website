@@ -3,50 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>artkp.ru — Системный интегратор</title>
+    <title>АРТКОМПРО — Системный интегратор | Телекоммуникации и ИТ-инфраструктура</title>
+    <meta name="description" content="АРТКОМПРО — эксперт рынка телекоммуникаций и ИТ-инфраструктуры. Проектирование, строительство и эксплуатация: ЦОДы, видеонаблюдение, СКУД, линии связи. Работаем с федеральными и муниципальными заказчиками.">
+    <meta name="keywords" content="системный интегратор, телекоммуникации, ИТ-инфраструктура, ЦОД, видеонаблюдение, СКУД, строительство сетей связи, АРТКОМПРО">
+    <meta property="og:title" content="АРТКОМПРО — Системный интегратор">
+    <meta property="og:description" content="Эксперт рынка телекоммуникаций и ИТ-инфраструктуры: от проектирования и строительства до эксплуатации.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">artkp.ru</div>
-            <ul>
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+    <!-- Навигация -->
+    <header class="site-header" id="site-header">
+        <nav class="nav container">
+            <a href="#hero" class="logo">
+                <span class="logo-mark">АК</span>
+                <span class="logo-text">АРТ<span class="logo-accent">КОМПРО</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">О компании</a></li>
+                <li><a href="#services" class="nav-link">Услуги</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#why" class="nav-link">Почему мы</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                <li><a href="#contacts" class="btn btn-primary btn-nav">Связаться</a></li>
             </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Системный интегратор</h1>
-            <p>Комплексные IT-решения для вашего бизнеса</p>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-grid"></div>
+                <div class="hero-glow hero-glow-1"></div>
+                <div class="hero-glow hero-glow-2"></div>
+            </div>
+            <div class="container hero-content">
+                <p class="hero-badge">Системный интегратор · с 2014 года</p>
+                <h1 class="hero-title">Эксперт рынка <span class="gradient-text">телекоммуникаций</span> и ИТ-инфраструктуры</h1>
+                <p class="hero-subtitle">Полный цикл — от проектирования и строительства до эксплуатации. Работаем с федеральными, муниципальными заказчиками и крупным бизнесом.</p>
+                <div class="hero-actions">
+                    <a href="#contacts" class="btn btn-primary btn-lg">Обсудить проект</a>
+                    <a href="#services" class="btn btn-outline btn-lg">Наши услуги</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">лет опыта</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">населённых пунктов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="80">0</span><span class="stat-k">K</span><span class="stat-plus">+</span>
+                        <span class="stat-label">видеокамер</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="1500">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">точек Wi-Fi</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>О компании</h2>
-            <p>Мы предоставляем полный спектр услуг по проектированию, внедрению и сопровождению IT-инфраструктуры.</p>
+        <!-- О компании -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-tag">О компании</p>
+                    <h2 class="section-title">Полное закрытие потребностей заказчика в ИТ-инфраструктуре</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>АРТКОМПРО — компания с экспертизой в телекоммуникациях: проектирование, строительство и обслуживание инфраструктуры связи и ИТ-систем.</p>
+                        <p>Наша цель — полное закрытие потребностей заказчика в создании ИТ-инфраструктуры и инфраструктуры связи с последующей эксплуатацией.</p>
+                        <ul class="about-list">
+                            <li><span class="check">✓</span> Участие в федеральных и муниципальных программах</li>
+                            <li><span class="check">✓</span> «Устранение цифрового неравенства»</li>
+                            <li><span class="check">✓</span> «Универсальная услуга связи»</li>
+                            <li><span class="check">✓</span> «Безопасный город»</li>
+                        </ul>
+                    </div>
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <div class="about-card-icon">🏗️</div>
+                            <h3>Собственные ресурсы</h3>
+                            <p>Инженерный состав, монтажные бригады, оборудование и эксперты — всё в штате компании.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-icon">🤝</div>
+                            <h3>Крупные клиенты</h3>
+                            <p>Ростелеком, Сбербанк, Сколково и другие лидеры рынка доверяют нам свои проекты.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Проектирование IT-инфраструктуры</li>
-                <li>Внедрение и интеграция систем</li>
-                <li>Сопровождение и поддержка</li>
-            </ul>
+        <!-- Услуги -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-tag">Услуги</p>
+                    <h2 class="section-title">Комплексные решения для вашей инфраструктуры</h2>
+                    <p class="section-subtitle">От отдельных систем на объекте до федеральных проектов под ключ</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h3>Инфраструктура для ЦОД</h3>
+                        <p>Проектирование, поставка оборудования и строительство систем электропитания, вентиляции, кондиционирования, СКС, холодных коридоров, выгородок.</p>
+                        <ul class="service-tags">
+                            <li>Электропитание</li>
+                            <li>Вентиляция</li>
+                            <li>СКС</li>
+                            <li>Холодные коридоры</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📹</div>
+                        <h3>Видеонаблюдение</h3>
+                        <p>Установка камер для государственного и корпоративного сегмента, видеосерверы для хранения и анализа данных.</p>
+                        <ul class="service-tags">
+                            <li>ММС</li>
+                            <li>ПВН</li>
+                            <li>ДВН</li>
+                            <li>Видеоаналитика</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔐</div>
+                        <h3>СКУД и безопасность</h3>
+                        <p>Установка турникетов, считывателей, электронных пропусков. Интеграция с видеонаблюдением для комплексной безопасности.</p>
+                        <ul class="service-tags">
+                            <li>Турникеты</li>
+                            <li>Считыватели</li>
+                            <li>Электронные пропуска</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔥</div>
+                        <h3>АУПТ и пожарная безопасность</h3>
+                        <p>Монтаж и обслуживание систем пожарной сигнализации, датчиков дыма, спринклеров. Комплексные решения для ЦОД, офисов и промышленных объектов.</p>
+                        <ul class="service-tags">
+                            <li>Пожарная сигнализация</li>
+                            <li>Датчики дыма</li>
+                            <li>Спринклеры</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Строительство сетей связи</h3>
+                        <p>Строительство линейно-кабельных сооружений и волоконно-оптических линий связи: прокладка в грунт, кабельной канализации, подвес по опорам.</p>
+                        <ul class="service-tags">
+                            <li>ВОЛС</li>
+                            <li>ЛКС</li>
+                            <li>ПУЭ, СНиП, ГОСТ</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Эксплуатационно-техническое обслуживание</h3>
+                        <p>Поддержка сетей, оборудования и клиентов B2B/B2C/B2G. Трёхуровневая техподдержка 24/7 с реакцией на заявки в течение 2 часов.</p>
+                        <ul class="service-tags">
+                            <li>Техподдержка 24/7</li>
+                            <li>Интернет и телефония</li>
+                            <li>СКЗИ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contacts">
-            <h2>Контакты</h2>
-            <p>Свяжитесь с нами для консультации</p>
+        <!-- Проекты -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-tag">Проекты</p>
+                    <h2 class="section-title">Реализованные проекты</h2>
+                    <p class="section-subtitle">Государственные и коммерческие проекты федерального масштаба</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-number">01</div>
+                        <h3>Устранение цифрового неравенства</h3>
+                        <p>Подключение более 100 населённых пунктов к высокоскоростному интернету в рамках федеральной программы.</p>
+                        <span class="project-badge">Федеральный проект</span>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-number">02</div>
+                        <h3>Муниципальное видеонаблюдение</h3>
+                        <p>Установка более 80 000 видеокамер в Москве и Московской области для обеспечения безопасности.</p>
+                        <span class="project-badge">Безопасный город</span>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-number">03</div>
+                        <h3>Сеть IPMPLS для Ростелекома</h3>
+                        <p>Строительство магистральной сети IPMPLS для одного из крупнейших операторов связи России.</p>
+                        <span class="project-badge">Крупный бизнес</span>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-number">04</div>
+                        <h3>Wi-Fi в банке</h3>
+                        <p>Развёртывание более 1500 точек беспроводного доступа в отделениях крупного банка.</p>
+                        <span class="project-badge">Корпоративный проект</span>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-number">05</div>
+                        <h3>Модернизация ЦОД</h3>
+                        <p>Модернизация инженерной инфраструктуры ЦОД: СКУД, АУПТ, холодные коридоры, кабельные лотки.</p>
+                        <span class="project-badge">ЦОД</span>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-number">06</div>
+                        <h3>Выносы сетей связи</h3>
+                        <p>Вынос сетей и инфраструктуры связи из пятна застройки и реконструируемых объектов.</p>
+                        <span class="project-badge">Инфраструктура</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Почему мы -->
+        <section id="why" class="section why">
+            <div class="container">
+                <div class="section-head">
+                    <p class="section-tag">Почему АРТКОМПРО</p>
+                    <h2 class="section-title">Надёжный партнёр для вашего бизнеса</h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon">🏆</div>
+                        <h3>Опыт</h3>
+                        <p>Успешное взаимодействие с федеральными, муниципальными заказчиками и крупным бизнесом.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🧠</div>
+                        <h3>Экспертиза</h3>
+                        <p>Адаптация под любые задачи — от отдельных систем на объекте до федеральных проектов под ключ.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">⚡</div>
+                        <h3>Скорость</h3>
+                        <p>Реакция на заявки в течение 2 часов. Быстрое реагирование на любые изменения.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🤝</div>
+                        <h3>Доверие</h3>
+                        <p>Работа с крупнейшими заказчиками России: Ростелеком, Сбербанк, Сколково.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="section contacts">
+            <div class="container">
+                <div class="contacts-card">
+                    <div class="contacts-info">
+                        <p class="section-tag">Контакты</p>
+                        <h2 class="section-title">Обсудим ваш проект</h2>
+                        <p class="contacts-text">Свяжитесь с нами — мы поможем спроектировать, построить и обслуживать вашу ИТ-инфраструктуру.</p>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:info@artkp.ru" class="contact-value">info@artkp.ru</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <span class="contact-label">Телефон</span>
+                                <a href="tel:+74950000000" class="contact-value">+7 (495) 000-00-00</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <span class="contact-label">Адрес</span>
+                                <span class="contact-value">Москва, Россия</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <h3>Оставьте заявку</h3>
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@company.ru" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Опишите вашу задачу..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 artkp.ru — Системный интегратор</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-mark">АК</span>
+                    <span class="logo-text">АРТ<span class="logo-accent">КОМПРО</span></span>
+                </a>
+                <p>Эксперт рынка телекоммуникаций и ИТ-инфраструктуры: от проектирования и строительства до эксплуатации.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#why">Почему мы</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><a href="mailto:info@artkp.ru">info@artkp.ru</a></li>
+                    <li><a href="tel:+74950000000">+7 (495) 000-00-00</a></li>
+                    <li>Москва, Россия</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 АРТКОМПРО. Все права защищены.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="/static/js/main.js"></script>
