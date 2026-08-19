@@ -169,7 +169,8 @@ img {
     justify-content: center;
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: 16px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
     box-shadow: 0 4px 12px rgba(0, 176, 246, 0.3);
 }
 
