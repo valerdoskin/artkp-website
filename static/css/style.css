@@ -241,8 +241,9 @@ img {
 .hero {
     position: relative;
     min-height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--gradient-dark);
     color: var(--color-white);
     padding: 120px 0 80px;
