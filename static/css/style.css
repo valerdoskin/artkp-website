@@ -325,8 +325,6 @@ img {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    overflow-wrap: break-word;
-    word-break: break-word;
 }
 
 .gradient-text {
@@ -951,6 +949,10 @@ img {
 
     .hero {
         padding: 100px 0 60px;
+    }
+
+    .hero-title {
+        font-size: clamp(1.3rem, 6.5vw, 2.4rem);
     }
 
     .hero-stats {
