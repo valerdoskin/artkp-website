@@ -142,9 +142,33 @@ function initContactForm() {
             return;
         }
 
-        // Здесь можно подключить отправку на сервер
-        showFormMessage(form, 'Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.', 'success');
-        form.reset();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Отправка...';
+
+        const formData = new FormData(form);
+
+        fetch('send.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                showFormMessage(form, data.message, 'success');
+                form.reset();
+            } else {
+                showFormMessage(form, data.message, 'error');
+            }
+        })
+        .catch(() => {
+            showFormMessage(form, 'Не удалось отправить заявку. Попробуйте позже.', 'error');
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+        });
     });
 }
 

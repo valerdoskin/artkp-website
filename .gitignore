@@ -34,3 +34,6 @@ build/
 # Hosting package (local artifacts for deployment)
 hosting-package/
 *.zip
+
+# Local screenshots
+Screenshot_*.jpg
