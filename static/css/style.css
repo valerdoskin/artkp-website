@@ -971,6 +971,8 @@ img {
 
     .hero-actions .btn {
         width: 100%;
+        padding: 14px 24px;
+        font-size: 15px;
     }
 
     .contacts-card {
